@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Visit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="listings.html">Listings</a>
+        <a href="visit.html">Visit</a>
+    </nav>
+    <div class="container">
+        <h1>Open Houses</h1>
+        <div class="calendar-container">
+            <iframe src="https://calendar.google.com/calendar/embed?src=newrio.antonio%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="appointment-section">
+            <p>Would you like to visit another time? Book an appointment with me!</p>
+            <!-- Google Calendar Appointment Scheduling -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <div class="scheduling-button-container">
+                <script>
+                (function() {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2eQli0wrcP8boCW0yVFkGjJU5lEmcloD8avJC-9ScsQSn4-ivD1igNS8wkGy-JXhhVD0wvMFWN?gv=true',
+                        color: '#039BE5',
+                        label: 'Book an appointment',
+                        target,
+                    });
+                    });
+                })();
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
