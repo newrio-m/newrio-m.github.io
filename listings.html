@@ -60,14 +60,25 @@
     
     <script>
         function openModal(element) {
-            document.getElementById("imageModal").style.display = "flex";
-            document.getElementById("modalImage").src = element.src;
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "flex";
+            modalImg.src = element.src;
         }
         
         function closeModal() {
-            document.getElementById("imageModal").style.display = "none";
-            document.getElementById("modalImage").src = "";
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "none";
+            modalImg.src = "";
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "none";
+            modalImg.src = "";
+        });
     </script>
 </body>
 </html>

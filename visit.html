@@ -13,12 +13,12 @@
         <a href="visit.html">Visit</a>
     </nav>
     <div class="container">
-        <h1>Open Houses</h1>
+        <h1>Open Houses/Visits</h1>
+        <p>Bellow you can check my calendar, if you can't make it to any of my open houses or if you would like to visit a particular place you can book an appointment with me!</p>
         <div class="calendar-container">
-            <iframe src="https://calendar.google.com/calendar/embed?src=newrio.antonio%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=newrio.antonio%40gmail.com&ctz=America%2FNew_York&mode=week&color=%23333333" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
         </div>
         <div class="appointment-section">
-            <p>Would you like to visit another time? Book an appointment with me!</p>
             <!-- Google Calendar Appointment Scheduling -->
             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
             <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
@@ -29,7 +29,7 @@
                     window.addEventListener('load', function() {
                     calendar.schedulingButton.load({
                         url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2eQli0wrcP8boCW0yVFkGjJU5lEmcloD8avJC-9ScsQSn4-ivD1igNS8wkGy-JXhhVD0wvMFWN?gv=true',
-                        color: '#039BE5',
+                        color: '#333333',
                         label: 'Book an appointment',
                         target,
                     });
