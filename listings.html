@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio's Listings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">About Me</a>
+        <a href="listings.html">Listings</a>
+        <a href="schedule.html">Schedule a call</a>
+    </nav>
+    <div class="container">
+        <h1>Current Listings</h1>
+        <div class="listing">
+            <h2>Beautiful Renovated House</h2>
+            <div class="image-container">
+                <img src="780 72nd Ter/@gabbavisuals-2239.jpg" alt="Beautiful Renovated House - Image 1" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2213.jpg" alt="Beautiful Renovated House - Image 2" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2176.jpg" alt="Beautiful Renovated House - Image 3" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2162.jpg" alt="Beautiful Renovated House - Image 4" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2338.jpg" alt="Beautiful Renovated House - Image 5" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2315.jpg" alt="Beautiful Renovated House - Image 6" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2301.jpg" alt="Beautiful Renovated House - Image 7" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-1.jpg" alt="Beautiful Renovated House - Image 8" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2276.jpg" alt="Beautiful Renovated House - Image 9" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2288.jpg" alt="Beautiful Renovated House - Image 10" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2246.jpg" alt="Beautiful Renovated House - Image 11" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2330.jpg" alt="Beautiful Renovated House - Image 12" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2297.jpg" alt="Beautiful Renovated House - Image 13" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2268.jpg" alt="Beautiful Renovated House - Image 14" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2254.jpg" alt="Beautiful Renovated House - Image 15" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2308.jpg" alt="Beautiful Renovated House - Image 16" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2282.jpg" alt="Beautiful Renovated House - Image 17" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2135.jpg" alt="Beautiful Renovated House - Image 18" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2225.jpg" alt="Beautiful Renovated House - Image 19" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2232.jpg" alt="Beautiful Renovated House - Image 20" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2169.jpg" alt="Beautiful Renovated House - Image 21" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2154.jpg" alt="Beautiful Renovated House - Image 22" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2183.jpg" alt="Beautiful Renovated House - Image 23" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2220.jpg" alt="Beautiful Renovated House - Image 24" onclick="openModal(this)">
+                <img src="780 72nd Ter/@gabbavisuals-2142.jpg" alt="Beautiful Renovated House - Image 25" onclick="openModal(this)">
+            </div>
+            <p>Location: Miami Beach, Belle Meade</p>
+            <p>Rent Price: N/A</p>
+            <p>Sell Price: $1,545,000</p>
+            <p>Bedrooms: 3</p>
+            <p>Bathrooms: 2</p>
+            <p>Description: Be the first to live in after a gut renovation concluded this month. Experience luxury living in Miami's prestigious guard-gated community of BELLE MEADE. This impeccably renovated property offers a new roof, plumbing and electrical systems, peace of mind is paramount. Step inside to find newly installed wood flooring, custom-built closets, and a remodeled kitchen seamlessly integrated with the living area, flooded with natural light. Outside, a spacious deck invites outdoor entertaining, while the covered garage offers versatile potential. Centrally located, enjoy quick access to Downtown/Brickell in 15 min, vibrant hotspots like Wynwood, Design District, Midtown within 10 min. Perfect for families, BELLE MEADE boasts a serene atmosphere and a playground, ensuring luxury living meets comfort in Miami's heart.</p>
+        </div>
+    </div>
+
+    <!-- Modal for Enlarged Images -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+    <script>
+        function openModal(element) {
+            document.getElementById("imageModal").style.display = "flex";
+            document.getElementById("modalImage").src = element.src;
+        }
+        
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+            document.getElementById("modalImage").src = "";
+        }
+    </script>
+</body>
+</html>
